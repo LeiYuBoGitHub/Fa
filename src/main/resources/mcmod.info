@@ -1,0 +1,16 @@
+[
+{
+  "modid": "mineral",
+  "name": "Mineral_Tool",
+  "description": "这是雷先森的第一个游戏MOD",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://weibo.com/u/2103847633/home?wvr=5&lf=reg",
+  "updateUrl": "",
+  "authorList": ["ExampleDude"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
