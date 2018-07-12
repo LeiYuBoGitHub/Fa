@@ -26,6 +26,7 @@ public class Mineral {
         @EventHandler
         public void preInit(FMLPreInitializationEvent event) {
                 proxy.preInit(event);
+                new RenderLoader();
         }
 
         @EventHandler

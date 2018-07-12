@@ -30,6 +30,7 @@ public class ItemLoader {
 
     @SubscribeEvent
     public void registerItems(RegistryEvent.Register<Item> event) {
+        System.out.println("开始注册物品......");
         event.getRegistry().register(dogEgg);
         System.out.println("物品本地化名称:" + dogEgg.getUnlocalizedName());
     }
@@ -37,6 +38,7 @@ public class ItemLoader {
     @SideOnly(Side.CLIENT)
     public static void registerRenders()
     {
+        System.out.println("开始注册物品材质......");
         registerRender(dogEgg);
     }
 

@@ -2,6 +2,7 @@ package com.lyb.server;
 
 import com.lyb.loader.BlockLoader;
 import com.lyb.loader.ItemLoader;
+import com.lyb.loader.RenderLoader;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;

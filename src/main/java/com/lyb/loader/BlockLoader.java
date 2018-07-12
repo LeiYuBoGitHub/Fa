@@ -28,6 +28,7 @@ public class BlockLoader {
 
     @SubscribeEvent
     public void registerBlocks(RegistryEvent.Register<Item> event) {
+        System.out.println("开始注册方块......");
         event.getRegistry().register(new ItemBlock(treeBlock).setRegistryName("tree_mineral"));
         System.out.println("方块本地化名称:" + treeBlock.getUnlocalizedName());
     }
@@ -35,6 +36,7 @@ public class BlockLoader {
     @SideOnly(Side.CLIENT)
     public static void registerRenders()
     {
+        System.out.println("开始注册方块材质......");
         registerRender(treeBlock);
     }
 

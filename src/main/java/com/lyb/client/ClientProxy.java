@@ -17,7 +17,6 @@ public class ClientProxy extends CommonProxy {
     public void preInit(FMLPreInitializationEvent event)
     {
         super.preInit(event);
-        new RenderLoader();
     }
 
     public void init(FMLInitializationEvent event)
