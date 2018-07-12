@@ -31,6 +31,9 @@ public class BlockLoader {
         System.out.println("开始注册方块......");
         event.getRegistry().register(new ItemBlock(treeBlock).setRegistryName("tree_mineral"));
         System.out.println("方块本地化名称:" + treeBlock.getUnlocalizedName());
+        //注册材质
+        registerRenders();
+
     }
 
     @SideOnly(Side.CLIENT)
@@ -43,7 +46,7 @@ public class BlockLoader {
     @SideOnly(Side.CLIENT)
     private static void registerRender(Block block)
     {
-        System.out.println("注册方块名称:" + block.getRegistryName());
+        System.out.println("注册材质时获取到的方块名称:" + block.getRegistryName());
         ModelResourceLocation model = new ModelResourceLocation(block.getRegistryName(), "inventory");
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0, model);
     }

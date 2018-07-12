@@ -26,6 +26,7 @@ public class ItemLoader {
     public ItemLoader(FMLPreInitializationEvent event)
     {
         MinecraftForge.EVENT_BUS.register(this);
+
     }
 
     @SubscribeEvent
@@ -33,6 +34,9 @@ public class ItemLoader {
         System.out.println("开始注册物品......");
         event.getRegistry().register(dogEgg);
         System.out.println("物品本地化名称:" + dogEgg.getUnlocalizedName());
+        //注册材质
+        registerRenders();
+
     }
 
     @SideOnly(Side.CLIENT)
@@ -45,7 +49,7 @@ public class ItemLoader {
     @SideOnly(Side.CLIENT)
     private static void registerRender(Item item)
     {
-        System.out.println("注册物品名称:" + item.getRegistryName());
+        System.out.println("注册材质时获取到的物品名称:" + item.getRegistryName());
         ModelResourceLocation model = new ModelResourceLocation(item.getRegistryName(), "inventory");
         ModelLoader.setCustomModelResourceLocation(item, 0, model);
     }
