@@ -1,5 +1,6 @@
 package com.lyb.client;
 
+import com.lyb.loader.BlockLoader;
 import com.lyb.loader.ItemLoader;
 import com.lyb.loader.RenderLoader;
 import com.lyb.server.CommonProxy;

@@ -5,6 +5,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -26,8 +27,8 @@ public class BlockLoader {
     }
 
     @SubscribeEvent
-    public void registerBlocks(RegistryEvent.Register<Block> event) {
-        event.getRegistry().register(treeBlock);
+    public void registerBlocks(RegistryEvent.Register<Item> event) {
+        event.getRegistry().register(new ItemBlock(treeBlock).setRegistryName("tree_mineral"));
         System.out.println("方块本地化名称:" + treeBlock.getUnlocalizedName());
     }
 
